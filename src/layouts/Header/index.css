@@ -1,0 +1,43 @@
+.gnb_wrap {
+    @apply fixed top-0 left-0;
+    max-width: 120rem;
+    height: 6.4rem;
+}
+
+.gnb {
+    @apply flex flex-row justify-between;
+    padding: 1.2rem 2rem;
+    height: 5.6rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.gnb .gnb_logo {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 3.6rem;
+}
+
+.gnb .gnb_menu {
+    @apply flex flex-row justify-self-stretch;
+}
+
+.gnb .gnb_menu > li {
+    @apply grid items-center;
+    margin-right: 3rem;
+}
+
+.gnb .gnb_menu > li > a {
+    font-weight: 700;
+    line-height: 1.4;
+    font-size: 1.8rem;
+    color: #4d5159;
+    font-style: normal;
+}
+
+.gnb .gnb_menu > li > a.active {
+    color: #ff6f0f;
+}
